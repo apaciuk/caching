@@ -1,0 +1,15 @@
+<h1>Cache</h1>
+
+<% cache 'current-time' do %>
+<%= Time.current %>
+<% end %>
+<br />
+<ul>
+<% cache 'items' do %> 
+<% @items.each do |item| %>
+<li><%= item.name %></li>
+<% end %>
+<% end %>
+</ul>
+
+
